@@ -1,0 +1,10 @@
+@use "variables";
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: variables.$light-bg;
+  color: variables.$light-text;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
