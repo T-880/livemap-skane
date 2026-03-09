@@ -8,3 +8,30 @@ body {
   padding: 0;
   text-align: center;
 }
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 15px;
+  padding: 1rem;
+  background-color: variables.$primary-color;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+#mapContainer {
+  width: 90%;
+  max-width: 1000px;
+  height: 500px;
+  margin: 1rem auto;
+}
+
+@media (max-width: variables.$mobile-breakpoint) {
+  #mapContainer {
+    width: 100%;
+  }
+}
