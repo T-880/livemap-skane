@@ -8,8 +8,24 @@
   </head>
 
   <body>
+        <nav>
+      <ul>
+        <li><a href="./index.html">Hem</a></li>
+        <li><a href="./konserter.html">Konserter</a></li>
+      </ul>
+    </nav>
+
     <h1>LiveMap Skåne – Kommande konserter</h1>
-    <div id="app"></div>
+
+    <form id="mapForm">
+      <label for="locationInput">Sök plats:</label>
+      <input type="text" id="locationInput" placeholder="Ex: Malmö" required />
+      <button type="submit">Sök</button>
+    </form>
+
+    <div id="mapContainer"></div>
+
     <script type="module" src="/src/js/main.js"></script>
+
   </body>
 </html>
